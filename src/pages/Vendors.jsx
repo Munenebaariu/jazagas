@@ -1,37 +1,25 @@
+
+import { useState, useEffect } from 'react'
 import VendorCard from '../components/VendorCard.jsx'
 
-const vendors = [
-  {
-    id: 1,
-    name: "Thindgua Gas Centre",
-    location: "Thindigua",
-    deliveryTime: "5-10 minutes"
-  },
-  {
-    id: 2,
-    name: "Quick Gas Supplies",
-    location: "Ruaka",
-    deliveryTime: "5-10 minutes"
-  },
-  {
-    id: 3,
-    name: "City LPG Distributors",
-    location: "Kiambu Road",
-    deliveryTime: "5-10 minutes"
-  }
-]
-
 function Vendors() {
+  const [vendors, setVendors] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3000/vendors')
+      .then(response => response.json())
+      .then(data => setVendors(data))
+  }, [])
+
   return (
     <div>
       <h1>Find Gas Vendors</h1>
 
       <div className="vendors-container">
-  {vendors.map(vendor => (
-    <VendorCard key={vendor.id} vendor={vendor} />
-  ))}
-</div>
-
+        {vendors.map(vendor => (
+          <VendorCard key={vendor.id} vendor={vendor} />
+        ))}
+      </div>
     </div>
   )
 }

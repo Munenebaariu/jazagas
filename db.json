@@ -1,0 +1,68 @@
+
+{
+  "vendors": [
+    {
+      "id": 1,
+      "name": "Nairobi Gas Centre",
+      "location": "Westlands",
+      "deliveryTime": "30-45 minutes"
+    },
+    {
+      "id": 2,
+      "name": "Quick Gas Supplies",
+      "location": "Kilimani",
+      "deliveryTime": "20-35 minutes"
+    },
+    {
+      "id": 3,
+      "name": "City LPG Distributors",
+      "location": "Parklands",
+      "deliveryTime": "40-50 minutes"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "vendorId": 1,
+      "name": "6kg LPG Cylinder",
+      "size": "6kg",
+      "price": 1300
+    },
+    {
+      "id": 2,
+      "vendorId": 1,
+      "name": "13kg LPG Cylinder",
+      "size": "13kg",
+      "price": 2500
+    },
+    {
+      "id": 3,
+      "vendorId": 2,
+      "name": "6kg LPG Cylinder",
+      "size": "6kg",
+      "price": 1250
+    },
+    {
+      "id": 4,
+      "vendorId": 2,
+      "name": "13kg LPG Cylinder",
+      "size": "13kg",
+      "price": 2450
+    },
+    {
+      "id": 5,
+      "vendorId": 3,
+      "name": "6kg LPG Cylinder",
+      "size": "6kg",
+      "price": 1350
+    },
+    {
+      "id": 6,
+      "vendorId": 3,
+      "name": "13kg LPG Cylinder",
+      "size": "13kg",
+      "price": 2550
+    }
+  ],
+  "orders": []
+}
