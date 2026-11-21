@@ -1,16 +1,91 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# JazaGas
 
-Currently, two official plugins are available:
+JazaGas is a simple LPG gas delivery marketplace built with React. It connects customers with local gas vendors, allowing them to compare prices, choose gas products and place delivery orders.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Customer
+- View available gas vendors.
+- Browse 6kg and 13kg LPG cylinders.
+- Compare prices from different vendors.
+- Place gas delivery orders.
+- View submitted orders and their status.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Vendor
+- View customer orders.
+- Update order status.
+- Track orders through Pending, Confirmed, Out for delivery and Delivered.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript
+- React Router
+- Context API
+- HTML and CSS
+- JSON Server
+- Vite
+
+## Running the Project Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Munenebaariu/jazagas.git
+```
+
+### 2. Enter the project folder
+
+```bash
+cd jazagas
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the frontend
+
+Open a terminal and run:
+
+```bash
+npm run dev
+```
+
+### 5. Start the backend
+
+Open a second terminal in the same project folder and run:
+
+```bash
+npm run server
+```
+
+The React application runs at:
+
+http://localhost:5173
+
+The JSON Server backend runs at:
+
+http://localhost:3000
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── context/
+├── pages/
+├── App.jsx
+├── App.css
+└── main.jsx
+
+db.json
+package.json
+```
+
+## Note
+
+This project uses JSON Server as a mock backend for learning and demonstration purposes. It is not a production backend.

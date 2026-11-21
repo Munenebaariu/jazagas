@@ -64,35 +64,6 @@
     }
   ],
   "orders": [
-    {
-      "vendorId": 1,
-      "vendorName": "Nairobi Gas Centre",
-      "productId": 1,
-      "productName": "6kg LPG Cylinder",
-      "size": "6kg",
-      "unitPrice": 1300,
-      "customerName": "Munene Baariu",
-      "phone": "0724262220",
-      "address": "Nairobi",
-      "quantity": 1,
-      "total": 1300,
-      "status": "Delivered",
-      "id": 1
-    },
-    {
-      "vendorId": 1,
-      "vendorName": "Nairobi Gas Centre",
-      "productId": 1,
-      "productName": "6kg LPG Cylinder",
-      "size": "6kg",
-      "unitPrice": 1300,
-      "customerName": "Shem",
-      "phone": "0724262220",
-      "address": "Nairobi",
-      "quantity": 1,
-      "total": 1300,
-      "status": "Pending",
-      "id": 2
-    }
+    
   ]
 }

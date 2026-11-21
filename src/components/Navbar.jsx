@@ -14,10 +14,6 @@ function Navbar() {
         </li>
 
         <li>
-          <Link to="/vendors">Find Gas</Link>
-        </li>
-
-        <li>
           <Link to="/orders">My Orders</Link>
         </li>
 
