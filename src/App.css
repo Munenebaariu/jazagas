@@ -146,3 +146,165 @@
     padding: 20px;
   }
 }
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 24px 40px;
+}
+
+.product-card {
+  background-color: #FFFFFF;
+  padding: 24px;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-card h3 {
+  color: #17345C;
+  margin-top: 0;
+}
+
+.product-card p {
+  color: #555555;
+  font-size: 16px;
+}
+
+.product-card button {
+  background-color: #E8A84A;
+  color: #17345C;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-card button:hover {
+  background-color: #D99A3E;
+}
+
+@media (max-width: 768px) {
+  .products-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+/* Orders Page */
+
+.orders-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 30px 40px;
+}
+
+.order-card {
+  background-color: #FFFFFF;
+  padding: 24px;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-card h3 {
+  color: #17345C;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.order-card p {
+  color: #555555;
+  margin: 12px 0;
+}
+
+@media (max-width: 768px) {
+  .orders-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+/* Order Card Header */
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.order-card-header h3 {
+  margin: 0;
+}
+
+/* Status Badge */
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pending {
+  background-color: #FFF0D5;
+  color: #9A6500;
+}
+
+.confirmed {
+  background-color: #DCEBFA;
+  color: #17345C;
+}
+
+.out-for-delivery {
+  background-color: #FCE5CC;
+  color: #9A4F00;
+}
+
+.delivered {
+  background-color: #DDF3E4;
+  color: #216B3A;
+}
+
+.navbar ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #E8A84A;
+}
+
+.navbar-logo {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navbar-button {
+  display: inline-block;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 100%;
+    order: 3;
+  }
+
+  .navbar-button {
+    margin-left: auto;
+  }
+}
